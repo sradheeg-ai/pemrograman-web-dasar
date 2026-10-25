@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Riwayat Hidup</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 25px;
+      background: #e9e9e5;
+      font-family: Arial, sans-serif;
+      color: #3f4858;
+    }
+
+    .cv {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      min-height: 1200px;
+      margin: auto;
+      padding: 100px 9% 100px 13%;
+      background: #fffef8;
+      overflow: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: #354765;
+      font-size: clamp(28px, 4.5vw, 50px);
+      font-weight: 800;
+    }
+
+    .foto {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 50%;
+      border: 6px solid white;
+    }
+
+    h2 {
+      color: #354765;
+      font-size: 32px;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 4px;
+    }
+
+    .data li {
+      display: grid;
+      grid-template-columns: 200px 15px minmax(0, 1fr);
+      gap: 5px;
+    }
+
+    .data b {
+      font-weight: normal;
+    }
+
+    .cv::before {
+      content: "";
+      position: absolute;
+      top: 170px;
+      left: 0;
+      width: 85px;
+      height: 105px;
+      background: #16b735;
+    }
+
+    .cv::after {
+      content: "";
+      position: absolute;
+      top: 170px;
+      right: 0;
+      width: 100px;
+      height: 105px;
+      background: linear-gradient(110deg, #8c7951, #4d8c42);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: linear-gradient(90deg, #17634f, #16c33b);
+    }
+
+    @media (max-width: 650px) {
+      body {
+        padding: 0;
+      }
+
+      .cv {
+        padding: 65px 6% 80px;
+      }
+
+      .header {
+        gap: 10px;
+      }
+
+      .foto {
+        width: 110px;
+        height: 110px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      .data li {
+        grid-template-columns: 115px 10px minmax(0, 1fr);
+        font-size: 13px;
+        overflow-wrap: anywhere;
+      }
+
+      li {
+        font-size: 14px;
+      }
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: white;
+      }
+
+      .cv {
+        box-shadow: none;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="cv">
+
+    <header class="header">
+      <h1>DAFTAR RIWAYAT<br>HIDUP</h1>
+
+      <img
+        src="c:\Users\MyBook Hype AMD\OneDrive\Pictures\Saved Pictures\WhatsApp Image 2026-10-25 at 11.34.22(1).jpeg"
+        alt="Foto Profil"
+        class="foto"
+      >
+    </header>
+
+    <section>
+      <h2>Data Pribadi</h2>
+
+      <ul class="data">
+        <li><span>Nama</span><b>:</b> Salahuddin Radhee Ghazanfar</li>
+        <li><span>Tanggal Lahir</span><b>:</b> 07 Desember 2005</li>
+        <li><span>Alamat</span><b>:</b> De Paris Residence Blok C21/17, Kab. Bogor</li>
+        <li><span>Nomor Telepon</span><b>:</b> 0881012574952</li>
+        <li><span>Jenis Kelamin</span><b>:</b> Laki-laki</li>
+        <li><span>Agama</span><b>:</b> Islam</li>
+        <li><span>Kewarganegaraan</span><b>:</b> Indonesia</li>
+        <li><span>Email</span><b>:</b> sradheeg@gmail.com</li>
+        <li><span>Status</span><b>:</b> Belum Menikah</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pendidikan</h2>
+
+      <ul>
+        <li>SDN Kartika Sejahtera 01 — 2012–2017</li>
+        <li>MTs Al-Madani — 2018–2021</li>
+        <li>SMK Binarahayu (Teknik Komputer dan Jaringan) — 2022–2024</li>
+        <li>Universitas Indraprasta (Teknik Informatika) — 2024–Sekarang</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pengalaman Bekerja</h2>
+
+      <ul>
+        <li>PKL di Universitas Terbuka bagian IT Support selama 6 bulan</li>
+        <li>PT. Rajawali Perdana Makmur (Juni–Juli 2025)</li>
+        <li>PT Dwi Mitra Cempaka sebagai Cleaning Service (Agustus 2025–sekarang)</li>
+      </ul>
+    </section>
+
+    <footer></footer>
+
+  </main>
+</body>
+</html>
